@@ -30,3 +30,10 @@ $ spark-submit --master yarn --deploy-mode cluster sKmeans.py
 ```
 
 *Note:* If a lot of resources a required, run on cluster.
+
+## Check Results
+If the app was run on mode client, one needs to check the results via logs. To read the logs enter the following command
+
+```
+$ yarn logs -applicationId <APP_ID>
+```
