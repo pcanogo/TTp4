@@ -26,7 +26,7 @@ $ spark-submit --master yarn --deploy-mode client sKmeans.py
 
 To run on cluster 
 ```
-$ spark-submit --master yarn --deploy-mode cluster sKmeans.py 
+$ spark-submit --master yarn --deploy-mode cluster --executor-memory 4G --num-executors 4 sKmeans.py
 ```
 
 *Note:* If a lot of resources a required, run on cluster.
